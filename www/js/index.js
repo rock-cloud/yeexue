@@ -3,14 +3,28 @@
   var onBodyReady;
 
   onBodyReady = function() {
-    var introHeight, windowHeight;
+    var introHeight, stepTemplate, windowHeight;
+    stepTemplate = _.template($('#stepTemplate').html());
     windowHeight = window.innerHeight;
     introHeight = windowHeight - 400 - 72;
     if (introHeight < 200) {
       introHeight = 200;
     }
-    return $('#intro').css({
+    $('#intro').css({
       'height': introHeight + "px"
+    });
+    return $('#createPlan').bind('click', function() {
+      var aStep;
+      aStep = stepTemplate();
+      $('#mainFrame').append(aStep);
+      return $('body').animate({
+        backgroundColor: "#000000",
+        scrollTop: '+=' + 500 + 'px',
+        specialEasing: {
+          scrollTop: 'easeOutBounce',
+          backgroundColor: 'easeOutBounce'
+        }
+      }, 1000);
     });
   };
 

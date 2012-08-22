@@ -6,7 +6,38 @@
 	<title>Welcome</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<script type='text/javascript' src='js/jquery.js'></script>
+	<script type='text/javascript' src='js/underscore.js'></script>
+	<script type='text/javascript' src='js/jquery.color.js'></script>
 	<script type='text/javascript' src='js/index.js'></script>
+	<script type="text/template" id="stepTemplate">
+		<div class='step'>
+			<div><h1>Step One.</h1></div>
+			<table width=100%>
+				<tr>
+					<td>
+						<div>
+							<h1>A:</h1>
+						</div>
+					</td>
+					<td>
+						<div>
+							<h1>B:</h1>
+						</div>
+					</td>
+					<td>
+						<div>
+							<h1>C:</h1>
+						</div>
+					</td>
+					<td>
+						<div>
+							<h1>D:</h1>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</script>
 	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
 </head>
@@ -22,8 +53,9 @@
 			<a><div id='signup' class='topEle topLink'>加入我们</div></a>
 		</div>
 		<div id='banner'>
-			<img src='image/makeplan.jpg' width=1024px/>
+			<img src='image/img2.jpg' width=1024px/>
 		</div>
+		<div class='btn btn-info' id='createPlan'>创建计划</div>
 		<div id='intro'>
 			<div>壹学，可以为你带来：</div>
 			<table width=100%>
@@ -43,9 +75,15 @@
 							<h1>C:</h1>
 						</div>
 					</td>
+					<td>
+						<div>
+							<h1>D:</h1>
+						</div>
+					</td>
 				</tr>
 			</table>
 		</div>
+		
 	</div>
 </body>
 </html>
