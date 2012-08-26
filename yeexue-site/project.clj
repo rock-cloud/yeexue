@@ -1,6 +1,6 @@
-(defproject edu-site "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+(defproject edu-site "0.0.1"
+  :description "the one study website"
+  :url "http://www.yeexue.org"
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [compojure "1.1.1"]
                  [enlive "1.0.0"]
