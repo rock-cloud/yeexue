@@ -1,0 +1,48 @@
+#+STARTUP: showall
+#+TITLE:   Website Architecture and Development Tools
+
+
+* Website Architecture
+
+** Front End
+*** Html/CSS/Javascript
+- [[http://twitter.github.com/bootstrap/][Bootstrap]]: html and css framework
+- [[http://jquery.com/][JQuery]]: javascript library
+- [[http://coffeescript.org/][Coffeescript]]: a language target on javascript
+
+** Back End
+- [[http://clojure.org/][Clojure]]: server side language \\
+  Here is a [[http://xumingming.sinaapp.com/302/clojure-functional-programming-for-the-jvm-clojure-tutorial/][tutor]] for Clojure.
+- [[http://www.oracle.com/technetwork/java/javase/downloads/index.html][Java]]: server side langauge
+
+** Server
+- [[http://www.ubuntu.com/][Ubuntu]]: operating system
+- [[http://nginx.org/][Nginx]]: proxy server
+- [[http://jetty.codehaus.org/jetty/][Jetty]]: web server, servlet container
+
+** Database
+- [[http://dev.mysql.com/][Mysql]]: database
+
+
+* Development Tools
+
+** Writing Code
+- [[http://leiningen.org/][Leiningen]]: Clojure project manager
+- [[http://www.eclipse.org/][Eclipse]]: IDE for Java and Clojure
+- [[http://code.google.com/p/counterclockwise/][Counterclockwise]]: Eclipse plugin for Clojure \\
+  There are many editors and plugins for writing Clojure, here is a [[http://www.bestinclass.dk/index.clj/2010/03/clojure-ides-the-grand-tour-getting-started.html][tutor]]. But Leiningen is necessary. Emacs is the best.
+- [[http://git-scm.com/][Git]]: distributed version control system
+- [[http://www.github.com][Github]]: code sharing and collaboration website
+
+** Deploy Environment
+- [[http://www.linode.com/][Linode]]: VPS \\
+  A [[http://www.blogkid.net/linode][tutor]] about how to buy Linode VPS.
+- [[http://www.godaddy.com/][Godaddy]]: domain name, undetermined.
+
+
+* Milestone
+
+** Development Environment
+查一查以上的各种技术，在自己的机器上尝试部署好开发环境（相信我，部署环境想当十分以及特别的麻烦=。=）
+** Collaboration
+学习Git和Github，之后开发就靠这两个神器了。我之后再找几个比较好的教程。

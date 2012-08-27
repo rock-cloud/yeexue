@@ -1,0 +1,10 @@
+#+STARTUP: showall
+#+TITLE: unionx's plan
+
+* week:1 date:120820
+前期商议
+* week:2 date:120827
+前端雏形（rock）
+数据分类（ziqi）
+后端连接数据库（unionx）
+前后端连接（unionx）
