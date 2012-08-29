@@ -5,7 +5,7 @@ body {
     height: 100%;
     min-width: 1024px;
     min-height: 600px;
-	background-color: #1F389A;
+	background-color: black;
     overflow-y: hidden;
     overflow-x: auto;
 }
@@ -36,7 +36,7 @@ a, a:hover {
     top: 0px;
     left: 0px;
     background-color: rgba(255,255,255,0.3);
-    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    //-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
     position: fixed;
     z-index: 1;
 }
@@ -78,29 +78,32 @@ a, a:hover {
     left: 0px;
     padding: 50px;
     overflow: hidden;
-    width: 200%;
+    width: 500%;
     opacity: 0;
     border-top: 1px solid rgba(255,255,255,0.2); 
-    border-bottom: 1px solid rgba(255,255,255,0.2); 
+    border-bottom: 1px solid rgba(0,0,0,0.2); 
     background-color: rgba(255,255,255,0.05);
 }
 #guideList .guideBlock {
-    background-color: rgba(255,255,255,0.2);
-    min-width: 200px;
-    height: 400px;
+    background-color: rgba(255, 255, 255, 0.2);
+    //background-color: white;
+    min-width: 160px;
+    height: 360px;
     float: left;
     margin-right: 20px;
-    -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
-    //-webkit-transition: background-color 0.3s linear;
-    -webkit-border-top-left-radius:20px; 
-    -webkit-border-bottom-right-radius:20px; 
+    //-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
 }
 #guideList .guideBlock:hover {
     background-color: rgba(255,255,255,0.1);
 }
 #guideList #introBlock {
-    width: 600px;
+    width: 560px;
 }
 #guideList #gBlock1 {
-    width: 600px;
+    width: 560px;
 }

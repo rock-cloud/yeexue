@@ -11,12 +11,6 @@ var onBodyReady = function() {
         $('#background').css({
             "opacity":"0"
         });
-      /*  $('#background').css({
-            "-webkit-transition-duration":"1s"
-        });
-        $('#background').css({
-            "-webkit-filter":"blur(10px)"
-        });*/
         $('#background').animate({"opacity":"1"}, 1000);
     });
     //build whole page
@@ -24,7 +18,6 @@ var onBodyReady = function() {
     windowWidth = window.innerWidth;
     if ( windowWidth > 1024 ) {
         var topLeft = (windowWidth-1024)/2;
-//        $('#topbar').css({'left':topLeft+"px"});
     } else {
         $('#topbar').css({'left':'0px'});
     }
@@ -36,9 +29,19 @@ var onBodyReady = function() {
         $('#guideList').css({'top':"80px"});
         $('#guideList').css({'padding-left':topLeft+"px"});
     }
+    $('#guideList #introBlock').css({"margin-left":"300px"});
     $('#guideList').animate({
-        'opacity':1
-    }, 1000);
+            'opacity':1
+        }, 1000
+    );
+    $("#guideList #introBlock").animate(
+        {"margin-left":"0px"},
+        {duration:1000,easing:"easeOutBack"}
+    );
+    $("#guideList #gBlock1").animate(
+        {"margin-left":"0px"},
+        {duration:1000,easing:"easeOutBack"}
+    );
 } 
 
 $(function() {
