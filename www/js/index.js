@@ -16,8 +16,8 @@ var onBodyReady = function() {
     //build whole page
     windowHeight = window.innerHeight;
     windowWidth = window.innerWidth;
+    var topLeft = (windowWidth-1024)/2;
     if ( windowWidth > 1024 ) {
-        var topLeft = (windowWidth-1024)/2;
     } else {
         $('#topbar').css({'left':'0px'});
     }
@@ -42,6 +42,9 @@ var onBodyReady = function() {
         {"margin-left":"0px"},
         {duration:1000,easing:"easeOutBack"}
     );
+    $('.guideTargetItem').bind(function(){
+        $('#guideList').animate({'padding-left':''});
+    });
 } 
 
 $(function() {
